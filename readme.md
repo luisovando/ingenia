@@ -1,27 +1,14 @@
-## Laravel PHP Framework
+#Ingenia Demo 
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Montar la instancia en un vitualhost en Xammp, Wampp, Laragon o en su defecto y como lo utilice en Laravel Homestead para su evaluación. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+El nombre de la base de datos debe ser **examen**, tal como lo solicitaron, favor de configurarlo en el archivo .env.example y reemplazar el nombre de este por .env al finalizar. 
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Para cargar todas las dependencias del proyecto es necesario ejecutar el comando `composer install` o bien  `composer update`, para esto previamente se debe tener configurado el gestor de dependencias **Composer** en el equipo donde será evaluado. Esto permitira crear la carpeta **vendor**.
 
-## Official Documentation
+Anexo tambien el modelo de sql, el cual puede ser cargado directamente mediante una administrador de base de datos o bien puede generarse la migración utilizando el comando `php artisan migrate`. Posteriormente ejecutar el comando `php artisan db:seed` para rellenar la aplicación con datos de prueba para acceder al sistema.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+**Accesos al sistema**
+USER: demo@example.com 
+PASS: secret
